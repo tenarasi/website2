@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: capstone-deployment
+  labels:
+    app: project2
+specs:
+  replicas: 2
+  selector:
+    matchlabels:
+      app: project2
+  template:
+    metadata:
+      labels:
+        app: project2
+  specs:
+    containers: 
+      - name: capstone-project2
+        image: tenarasi/project2:latest
+        ports:
+        - containerPort: 80
