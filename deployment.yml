@@ -4,7 +4,7 @@ metadata:
   name: capstone-deployment
   labels:
     app: project2
-specs:
+spec:
   replicas: 2
   selector:
     matchlabels:
@@ -13,7 +13,7 @@ specs:
     metadata:
       labels:
         app: project2
-  specs:
+  spec:
     containers: 
       - name: capstone-project2
         image: tenarasi/project2:latest
