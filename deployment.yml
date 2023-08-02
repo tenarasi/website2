@@ -13,9 +13,9 @@ spec:
     metadata:
       labels:
         app: project2
-  spec:
-    containers: 
-      - name: capstone-project2
-        image: tenarasi/project2:latest
+    spec:
+      containers:
+      - name: capstone
+        image: tenarasi/project2
         ports:
         - containerPort: 80
